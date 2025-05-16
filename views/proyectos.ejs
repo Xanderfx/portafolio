@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos | Alexander Liranzo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/img/spider.jpg" />
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    .animate-delay-100 { animation-delay: 0.1s; }
+    .animate-delay-200 { animation-delay: 0.2s; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-gray-800 font-sans text-gray-100 antialiased">
+
+  <!-- Encabezado -->
+  <header class="bg-gray-900/90 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-blue-400 tracking-tight">Portafolio</h1>
+      <nav class="space-x-8 text-gray-300">
+        <a href="/" class="text-sm font-semibold hover:text-blue-400 transition-colors duration-300">Inicio</a>
+        <a href="/proyectos" class="text-blue-400 font-bold">Proyectos</a>
+        <a href="/#contacto" class="text-sm font-semibold hover:text-blue-400 transition-colors duration-300">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-5xl font-extrabold text-white mb-12 text-center tracking-tight animate-fadeInUp">Mis Proyectos</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Proyecto 1 -->
+      <div class="bg-gray-800/80 rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-fadeInUp animate-delay-100">
+        <h3 class="text-2xl font-bold text-white mb-3">Voz del Pueblo</h3>
+        <p class="text-gray-300 mb-4 text-lg leading-relaxed">
+          Foro político donde los ciudadanos pueden opinar, votar y debatir temas nacionales con autenticación de usuarios.
+        </p>
+        <a href="/proyectos/voz-del-pueblo" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-300">Ver más detalles</a>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="bg-gray-800/80 rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-fadeInUp animate-delay-200">
+        <h3 class="text-2xl font-bold text-white mb-3">MelodiaNow (En desarrollo)</h3>
+        <p class="text-gray-300 mb-4 text-lg leading-relaxed">
+          Plataforma de música en línea inspirada en Spotify. Permitirá reproducir canciones, crear playlists y seguir artistas.
+        </p>
+        <span class="text-yellow-400 font-semibold">En desarrollo</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900/90 mt-16 py-8 shadow-inner text-center text-gray-400 text-sm">
+    © <%= new Date().getFullYear() %> Alexander Liranzo. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voz del Pueblo | Detalles</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/img/spider.jpg">
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    .animate-delay-100 { animation-delay: 0.1s; }
+    .animate-delay-200 { animation-delay: 0.2s; }
+    .animate-delay-300 { animation-delay: 0.3s; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-gray-800 font-sans text-gray-100 antialiased">
+
+  <!-- Encabezado -->
+  <header class="bg-gray-900/90 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-blue-400 tracking-tight">Portafolio</h1>
+      <nav class="space-x-8 text-gray-300">
+        <a href="/" class="text-sm font-semibold hover:text-blue-400 transition-colors duration-300">Inicio</a>
+        <a href="/proyectos" class="text-blue-400 font-bold">Proyectos</a>
+        <a href="/#contacto" class="text-sm font-semibold hover:text-blue-400 transition-colors duration-300">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-5xl font-extrabold text-white mb-6 text-center tracking-tight animate-fadeInUp">Voz del Pueblo</h2>
+    <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed text-center animate-fadeInUp animate-delay-100">
+      Voz del Pueblo es un foro en línea diseñado para fomentar la participación ciudadana en discusiones políticas y sociales. Permite a los usuarios debatir, votar y proponer ideas de forma democrática y organizada.
+    </p>
+
+    <div class="space-y-10">
+      <div class="animate-fadeInUp animate-delay-200">
+        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Características:</h3>
+        <ul class="list-none space-y-2">
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-check-circle text-blue-400"></i> Registro y autenticación de usuarios
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-check-circle text-blue-400"></i> Creación de temas de discusión
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-check-circle text-blue-400"></i> Comentarios y respuestas en cada tema
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-check-circle text-blue-400"></i> Votaciones a favor o en contra
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-check-circle text-blue-400"></i> Categorías organizadas por áreas de interés
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-check-circle text-blue-400"></i> Moderación de contenido (opcional)
+          </li>
+        </ul>
+      </div>
+
+      <div class="animate-fadeInUp animate-delay-300">
+        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Tecnologías usadas:</h3>
+        <ul class="list-none space-y-2">
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-code text-blue-400"></i> Node.js + Express
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-database text-blue-400"></i> Base de datos MySQL
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-file-code text-blue-400"></i> EJS para plantillas
+          </li>
+          <li class="flex items-center gap-3 text-gray-300 text-lg">
+            <i class="fas fa-paint-brush text-blue-400"></i> Tailwind CSS
+          </li>
+        </ul>
+      </div>
+
+      <div class="animate-fadeInUp animate-delay-300">
+        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Capturas:</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <img
+            src="/img/Captura de pantalla 2025-05-16 095132.png"
+            alt="Página principal del foro"
+            class="rounded-xl shadow-2xl w-full h-64 object-cover transform hover:scale-105 transition-all duration-300"
+          />
+          <img
+            src="/img/Captura de pantalla 2025-05-16 095057.png"
+            alt="Comentarios en tema"
+            class="rounded-xl shadow-2xl w-full h-64 object-cover transform hover:scale-105 transition-all duration-300"
+          />
+        </div>
+      </div>
+
+      <div class="mt-10 text-center animate-fadeInUp animate-delay-300">
+        <a
+          href="https://github.com/tu_usuario/voz-del-pueblo"
+          target="_blank"
+          class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full shadow-xl hover:bg-blue-600 transition-all duration-300 font-semibold text-lg transform hover:scale-105"
+        >
+          Ver en GitHub
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900/90 mt-16 py-8 shadow-inner text-center text-gray-400 text-sm">
+    © <%= new Date().getFullYear() %> Alexander Liranzo. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

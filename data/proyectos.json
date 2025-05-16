@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "App de Clima",
+    "descripcion": "Aplicación web que muestra el clima usando una API externa.",
+    "imagen": "/img/app-clima.png",
+    "archivo": "/descargas/app-clima.zip"
+  },
+  {
+    "id": 2,
+    "titulo": "Chat en Tiempo Real",
+    "descripcion": "Proyecto de chat con Node.js y Socket.io.",
+    "imagen": "/img/chat.png",
+    "archivo": "/descargas/chat.zip"
+  }
+]
