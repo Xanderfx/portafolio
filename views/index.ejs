@@ -14,27 +14,6 @@
     referrerpolicy="no-referrer"
   />
   <style>
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fadeIn {
-      animation: fadeIn 1.4s ease-out forwards;
-    }
-    @keyframes slideIn {
-      from { transform: translateX(100%); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-    .animate-slideIn {
-      animation: slideIn 0.6s ease-out forwards;
-    }
-    @keyframes slideOut {
-      from { transform: translateX(0); opacity: 1; }
-      to { transform: translateX(100%); opacity: 0; }
-    }
-    .animate-slideOut {
-      animation: slideOut 0.6s ease-out forwards;
-    }
     .gradient-text {
       background: linear-gradient(90deg, #2563eb, #c084fc);
       -webkit-background-clip: text;
@@ -64,6 +43,20 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
+    @keyframes slideIn {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .animate-slideIn {
+      animation: slideIn 0.6s ease-out forwards;
+    }
+    @keyframes slideOut {
+      from { transform: translateX(0); opacity: 1; }
+      to { transform: translateX(100%); opacity: 0; }
+    }
+    .animate-slideOut {
+      animation: slideOut 0.6s ease-out forwards;
+    }
   </style>
 </head>
 <body class="bg-gradient-to-b from-gray-950 to-black text-gray-100 antialiased selection:bg-blue-600/20">
@@ -79,6 +72,7 @@
       <!-- Navegación para pantallas grandes -->
       <nav class="hidden md:flex space-x-14 text-gray-200">
         <a href="#sobre-mi" class="text-base font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Sobre mí</a>
+        <a href="#habilidades" class="text-base font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Habilidades</a>
         <a href="#proyectos" class="text-base font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Proyectos</a>
         <a href="#contacto" class="text-base font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Contacto</a>
       </nav>
@@ -89,6 +83,7 @@
         </button>
         <div class="flex flex-col space-y-10 text-gray-200">
           <a href="#sobre-mi" class="text-xl font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Sobre mí</a>
+          <a href="#habilidades" class="text-xl font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Habilidades</a>
           <a href="#proyectos" class="text-xl font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Proyectos</a>
           <a href="#contacto" class="text-xl font-medium hover:text-blue-400 transition-colors duration-400 hover-pulse">Contacto</a>
         </div>
@@ -98,7 +93,7 @@
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-28">
     <!-- Perfil -->
-    <section class="flex flex-col md:flex-row items-center gap-14 md:gap-28 animate-fadeIn">
+    <section class="flex flex-col md:flex-row items-center gap-14 md:gap-28">
       <div class="relative group">
         <img
           src="/img/spider.jpg"
@@ -116,15 +111,64 @@
     </section>
 
     <!-- Sobre mí -->
-    <section id="sobre-mi" class="mt-36 bg-gray-900/30 p-16 rounded-3xl shadow-2xl animate-fadeIn">
+    <section id="sobre-mi" class="mt-36 bg-gray-900/30 p-16 rounded-3xl shadow-2xl">
       <h3 class="text-4xl font-bold gradient-text mb-8 tracking-tight">Sobre mí</h3>
       <p class="text-gray-300 mb-6 text-lg leading-relaxed max-w-xl">
         Soy Alexander, un apasionado por el desarrollo web, comprometido con la creación de soluciones digitales que fusionan diseño impecable con funcionalidad excepcional. Domino tecnologías como <strong>Node.js, Python, HTML, CSS, Tailwind, EJS, Angular e Ionic</strong>, siempre buscando innovar y entregar proyectos que inspiren.
       </p>
     </section>
 
+    <!-- Habilidades -->
+    <section id="habilidades" class="mt-36">
+      <h3 class="text-4xl font-bold gradient-text mb-8 tracking-tight text-center">Habilidades</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-900/50 p-6 rounded-2xl shadow-2xl hover-pulse">
+          <i class="fas fa-code text-blue-400 text-2xl mb-3"></i>
+          <h4 class="text-xl font-medium text-gray-200 mb-2">Node.js</h4>
+          <div class="w-full bg-gray-800 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-900/50 p-6 rounded-2xl shadow-2xl hover-pulse">
+          <i class="fab fa-python text-blue-400 text-2xl mb-3"></i>
+          <h4 class="text-xl font-medium text-gray-200 mb-2">Python</h4>
+          <div class="w-full bg-gray-800 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-900/50 p-6 rounded-2xl shadow-2xl hover-pulse">
+          <i class="fab fa-html5 text-blue-400 text-2xl mb-3"></i>
+          <h4 class="text-xl font-medium text-gray-200 mb-2">HTML/CSS</h4>
+          <div class="w-full bg-gray-800 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-900/50 p-6 rounded-2xl shadow-2xl hover-pulse">
+          <i class="fas fa-wind text-blue-400 text-2xl mb-3"></i>
+          <h4 class="text-xl font-medium text-gray-200 mb-2">Tailwind CSS</h4>
+          <div class="w-full bg-gray-800 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-900/50 p-6 rounded-2xl shadow-2xl hover-pulse">
+          <i class="fas fa-file-code text-blue-400 text-2xl mb-3"></i>
+          <h4 class="text-xl font-medium text-gray-200 mb-2">EJS</h4>
+          <div class="w-full bg-gray-800 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-900/50 p-6 rounded-2xl shadow-2xl hover-pulse">
+          <i class="fab fa-angular text-blue-400 text-2xl mb-3"></i>
+          <h4 class="text-xl font-medium text-gray-200 mb-2">Angular/Ionic</h4>
+          <div class="w-full bg-gray-800 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Proyectos -->
-    <section id="proyectos" class="mt-36 animate-fadeIn">
+    <section id="proyectos" class="mt-36">
       <h3 class="text-4xl font-bold gradient-text mb-8 tracking-tight">Proyectos</h3>
       <p class="text-lg text-gray-300 mb-12 leading-relaxed max-w-xl">Explora mis proyectos destacados, donde la creatividad y la tecnología se unen para crear experiencias únicas:</p>
       <div class="text-center">
@@ -138,7 +182,7 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="mt-36 animate-fadeIn">
+    <section id="contacto" class="mt-36">
       <h3 class="text-4xl font-bold gradient-text mb-8 tracking-tight text-center">Contacto</h3>
       <div class="bg-gray-900/30 p-12 rounded-3xl shadow-2xl max-w-2xl mx-auto">
         <p class="text-lg text-gray-300 mb-8 leading-relaxed text-center">Conéctate conmigo para colaborar o conocer más sobre mi trabajo:</p>
@@ -156,10 +200,9 @@
             <i class="fab fa-x-twitter text-2xl"></i> X
           </a>
         </div>
-        
+        <p class="text-gray-400 text-sm mt-8 text-center">© 2025 Alexander Liranzo. Todos los derechos reservados.</p>
       </div>
     </section>
-    <p class="text-gray-400 text-sm mt-8 text-center">© 2025 Alexander Liranzo. Todos los derechos reservados.</p>
   </main>
 
   <script>
